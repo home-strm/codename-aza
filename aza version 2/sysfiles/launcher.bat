@@ -2,6 +2,7 @@
 cls
 goto setup
 
+:: sets color values and goes onto second setup stage
 :setup
 cd ..
 cd config
@@ -12,6 +13,7 @@ color %col1%
 cls
 goto setup2
 
+:: sets username values and opens the main desktop
 :setup2
 <loginconfig.txt (
 set /p username=
@@ -19,6 +21,7 @@ set /p username=
 cls
 goto gui
 
+:: wallpaper and menu open prompt
 :gui
 cls
 cd ..
@@ -41,6 +44,7 @@ cd %username%
 pause >nul
 goto menu1
 
+:: first menu
 :menu1
 cls
 echo ------------------
@@ -62,11 +66,28 @@ if %choice1% == 2 goto files
 if %choice1% == 3 goto sysinfo
 if %choice1% == 4 goto settings
 if %choice1% == 5 goto chat
+:: nice
 if %choice1% == 6 goto games
 if %choice1% == 7 goto logout
 if %choice1% == 8 goto shutdown
 if %choice1% == 9 goto gui3
 
+:: goes back to wallpaper
 :gui3
 cls
 goto gui
+
+:: opens notepad
+:notepad
+cd..
+cd ..
+cd preinstalled
+call notepad
+
+:: opens files
+:files
+cd..
+cd ..
+cd preinstalled
+call files
+
