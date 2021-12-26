@@ -5,3 +5,7 @@ a project ive been working on. written 100% in batch,
 subject to change maybe if i find a tui app to display
 so i can add a proper wallpaper and an image viewer and
 stuff.
+
+
+# Updates
+Probably gonna take a break from developing this from a while.
