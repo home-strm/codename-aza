@@ -8,4 +8,4 @@ stuff.
 
 
 # Updates
-Probably gonna take a break from developing this from a while.
+Probably gonna take a break from developing this for a while.
